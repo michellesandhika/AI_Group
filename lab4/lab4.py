@@ -2,6 +2,11 @@ import networkx as nx
 import matplotlib.pylab as plt
 
 """ 
+Group member: 
+Michelle Karen Natasya Putri SANDHIKA 18078659d
+Randall NICHOLAS 18079343D
+Nicholas Matthew KURNIADI 18079267D
+
 Answers to the question is in answer.txt
 """
 
