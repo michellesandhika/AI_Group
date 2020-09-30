@@ -1,0 +1,18 @@
+Group member: 
+Michelle Karen Natasya Putri SANDHIKA 18078659d
+Randall NICHOLAS 18079343D
+Nicholas Matthew KURNIADI 18079267D
+
+Q1. Formulate your problem as a shortest path problem 
+node i = beginning of hour i
+edge (i,j) = hire a worker from hour i and them finishing their shift at hour j
+
+Q2. Solve your shortest path formulation: give the shortest path length and a shortest path
+(in the lab4.py file. If the graph is unreadable, run again. The node position are randomized, sometimes the edge will overlap)
+
+Shortest Path: path: [7,11,2]
+Shortest Path Length: 90
+
+Q3. Interpret the shortest path length and shortest path in the context of the problem.
+The nodes in the shortest path indicate when to start hiring the driver (and when the driver shift ends). 
+In this case, we should hire a driver from 7-11 and from 11-2 with the cost of $50 and $40.
