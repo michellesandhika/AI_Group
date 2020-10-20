@@ -36,10 +36,31 @@ newx = np.linspace(0,1,m)
 newX = newx.reshape(m,1)
 newy = 4 * (newX - 0.5) ** 2
 newY = newy + np.random.randn(m, 1) / 10
+tree_reg2 = DecisionTreeRegressor(max_depth=3)
+tree_reg3 = DecisionTreeRegressor(max_depth=4)
+tree_reg2.fit(X, Y)
+tree_reg3.fit(X, Y)
 
-plt.scatter(newX,newY)
+
+def regression_prediction(tree, x, y, axis=[0, 1, -0.2, 1]):
+   
+    
+    y_pred = tree.predict(newX)
+    plt.axis(axis)
+    plt.xlabel('x', fontsize = 18)
+    plt.ylabel('y', fontsize = 18)
+    plt.plot(X, y, 'b.')
+    plt.plot(newX, y_pred, 'r.-', linewidth = 2)
+
+
+regression_prediction(tree_reg2, X, Y)
+plt.title('max_depth={}'.format(tree_reg2.max_depth), fontsize=14)
 plt.show()
 
+
+regression_prediction(tree_reg3, X, Y)
+plt.title('max_depth={}'.format(tree_reg3.max_depth), fontsize=14)
+plt.show()
 tree_clf.fit(newX,newY)
 export_graphviz(
         tree_clf,
@@ -48,27 +69,4 @@ export_graphviz(
         filled=True
     )
 
-## 5
-newtree_clf = DecisionTreeRegressor(max_depth=3)
 
-
-from mlxtend.plotting import plot_decision_regions
-from matplotlib import pylab as plt
-fig, ax = plt.subplots(figsize=(7, 7))
-plot_decision_regions(newX, newY, clf=newtree_clf)
-plt.xlabel('X')
-plt.ylabel('Y')
-plt.legend(loc='upper left')
-plt.tight_layout()
-plt.show()
-
-
-
-
-fig, ax = plt.subplots(figsize=(7, 7))
-plot_decision_regions(newx, Y.astype(np.integer), clf=tree_clf)
-plt.xlabel('X')
-plt.ylabel('Y')
-plt.legend(loc='upper left')
-plt.tight_layout()
-plt.show()
