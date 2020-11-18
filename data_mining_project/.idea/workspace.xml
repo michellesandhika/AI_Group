@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d9d3e44-90cb-4fd9-9f7a-43b93365d867" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/prettified-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/prettified-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prettified.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/prettified.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="0d9d3e44-90cb-4fd9-9f7a-43b93365d867" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +103,7 @@
       <workItem from="1605443567298" duration="9806000" />
       <workItem from="1605511987359" duration="12732000" />
       <workItem from="1605635108885" duration="4280000" />
-      <workItem from="1605674891005" duration="2166000" />
+      <workItem from="1605674891005" duration="2350000" />
     </task>
     <servers />
   </component>
